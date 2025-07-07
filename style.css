@@ -1,0 +1,30 @@
+
+body { background: #0B0D17; color: white; font-family: 'Lato', sans-serif; margin: 0; }
+header { display: flex; justify-content: space-between; align-items: center; background: #0B0D17; padding: 15px 30px; }
+nav a { color: #C9B037; margin: 0 15px; text-decoration: none; transition: color 0.3s ease, transform 0.3s ease; font-size: 1.1em; }
+nav a:hover { color: silver; transform: scale(1.1); }
+.logo-circle { width: 120px; height: 120px; border-radius: 50%; overflow: hidden; border: 2px solid #C9B037; display: flex; align-items: center; justify-content: center; animation: logoFade 1s ease; }
+.logo-circle.big { width: 150px; height: 150px; animation: logoFadeBig 1.5s ease; }
+.logo-circle img { width: 85%; }
+.hero { text-align: center; padding: 100px 20px; animation: fadeIn 1s ease-in; }
+.hero h1 { font-size: 3em; color: #C9B037; transition: transform 0.3s ease; }
+.hero h1:hover { transform: scale(1.05); }
+.hero h2 { color: #B0B0B0; margin: 20px 0; font-size: 1.3em; }
+.btn { background: #C9B037; color: #000; padding: 12px 25px; text-decoration: none; margin-top: 30px; display: inline-block; transition: background 0.3s ease, transform 0.3s ease; font-size: 1.1em; }
+.btn:hover { background: silver; transform: scale(1.1); }
+section { max-width: 800px; margin: 50px auto; padding: 20px; background: #12141E; border-radius: 8px; transition: background 0.3s ease; }
+section:hover { background: #1A1D29; }
+section h2 { color: #C9B037; text-align: center; font-size: 2em; }
+section p { color: white; line-height: 1.7; font-size: 1.2em; margin: 10px 0; }
+.subject { color: #C9B037; font-size: 1.3em; display: block; margin-bottom: 5px; }
+.question { color: #C9B037; font-size: 1.3em; display: block; margin-bottom: 5px; }
+.emaillink { color: #C9B037; text-decoration: underline; }
+.emaillink:hover { color: silver; }
+.interactive p:hover { transform: scale(1.05); color: silver; transition: all 0.3s ease; }
+footer { background: #0B0D17; color: #fff; text-align: center; padding: 20px; margin-top: 50px; }
+.contact-icons img { width: 35px; margin: 0 10px; transition: transform 0.3s ease; }
+.contact-icons img.bigicon { width: 55px; }
+.contact-icons img:hover { transform: scale(1.2); }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes logoFade { from { opacity: 0; transform: scale(0.5); } to { opacity: 1; transform: scale(1); } }
+@keyframes logoFadeBig { from { opacity: 0; transform: scale(0); } to { opacity: 1; transform: scale(1); } }
